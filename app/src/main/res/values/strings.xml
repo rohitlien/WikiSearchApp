@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WikiSearchApp</string>
+    <string name="welcome_text">Welcome to Wiki Search</string>
+    <string name="text_loading">Loading</string>
+    <string name="hint_search">Enter key word to search</string>
+    <string name="text_no_search_key">Please enter a key to search</string>
+    <string name="text_offline_searches">Offline results</string>
+    <string name="text_go_offline">Go offline</string>
+    <string name="text_go_online">Go online</string>
+    <string name="text_no_internet">No network available! Please connect and try again!</string>
+
+</resources>
