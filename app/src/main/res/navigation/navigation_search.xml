@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_search"
+    app:startDestination="@id/wikiSearchFragment">
+
+    <fragment
+        android:id="@+id/wikiSearchFragment"
+        android:name="com.rohit.wikisearchapp.ui.wikiSearch.WikiSearchFragment"
+        android:label="wiki_search_fragment"
+        tools:layout="@layout/wiki_search_fragment" >
+        <action
+            android:id="@+id/action_wikiSearchFragment_to_wikiWebViewFragment"
+            app:destination="@id/wikiWebViewFragment" />
+        <action
+            android:id="@+id/action_wikiSearchFragment_to_wikiOfflineSearchListFragment"
+            app:destination="@id/wikiOfflineSearchListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/wikiWebViewFragment"
+        android:name="com.rohit.wikisearchapp.ui.wikiSearch.WikiWebViewFragment"
+        android:label="wiki_web_view_fragment"
+        tools:layout="@layout/wiki_web_view_fragment" />
+    <fragment
+        android:id="@+id/wikiOfflineSearchListFragment"
+        android:name="com.rohit.wikisearchapp.ui.wikiSearch.WikiOfflineSearchListFragment"
+        android:label="wiki_offline_search_list_fragment"
+        tools:layout="@layout/wiki_offline_search_list_fragment" >
+        <action
+            android:id="@+id/action_wikiOfflineSearchListFragment_to_wikiWebViewFragment"
+            app:destination="@id/wikiWebViewFragment" />
+        <action
+            android:id="@+id/action_wikiOfflineSearchListFragment_to_wikiSearchFragment"
+            app:destination="@id/wikiSearchFragment" />
+    </fragment>
+</navigation>
